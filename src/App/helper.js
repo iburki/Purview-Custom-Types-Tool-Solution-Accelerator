@@ -23,7 +23,7 @@ export async function fetchAuth(callback) {
 
 // Fetch AAD token API & set token state
 export async function fetchToken(callback) {
-  let apiUrl = "https://purviewfunctionappv2.azurewebsites.net/api/aad/token?code=DEFAULT_KEY;
+  let apiUrl = "https://purviewfunctionappv2.azurewebsites.net/api/aad/token?code=DEFAULT_KEY"
   console.log(`### FETCH: GET ${apiUrl}`);
 
   const tokenResponse = await fetch(apiUrl),
